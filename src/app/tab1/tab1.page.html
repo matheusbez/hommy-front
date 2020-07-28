@@ -12,40 +12,12 @@
     <h4 class="recommended">Recomendados</h4>
   </ion-text>
   <ion-slides pager="true"[options]="slideOpts">
-    <ion-slide>
+    <ion-slide *ngFor="let republica of republicas">
       <ion-card>
-        <img src="../assets/republica.jpg"/>
+        <img src="{{republica.imagem}}"/>
         <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UFRJ-Fundão</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
-        </ion-card-header>
-      </ion-card>
-    </ion-slide>
-    <ion-slide>
-      <ion-card>
-        <img src="../assets/casa1.jpg"/>
-        <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UERJ</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
-        </ion-card-header>
-      </ion-card>
-    </ion-slide>
-    <ion-slide>
-      <ion-card>
-        <img src="../assets/casa2.jpg"/>
-        <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UFF-Niterói</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
-          
-        </ion-card-header>
-      </ion-card>
-    </ion-slide>
-    <ion-slide>
-      <ion-card>
-        <img src="../assets/casa3.jpg"/>
-        <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UFRJ-Fundão</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
+          <ion-card-title><h5>{{republica.titulo}}</h5></ion-card-title>
+          <ion-card-subtitle>{{republica.subtitulo}}</ion-card-subtitle>
         </ion-card-header>
       </ion-card>
     </ion-slide>
@@ -54,46 +26,14 @@
     <h4 class="next-to-you">Próximos a você</h4>
   </ion-text>
   <ion-slides pager="true"[options]="slideOpts">
-    <ion-slide>
+    <ion-slide *ngFor="let republica2 of republicas2">
       <ion-card>
-        <img src="../assets/casa4.jpg"/>
+        <img src="{{republica2.imagem}}"/>
         <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UFRJ-Fundão</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
-        </ion-card-header>
-      </ion-card>
-    </ion-slide>
-    <ion-slide>
-      <ion-card>
-        <img src="../assets/casa5.png"/>
-        <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UERJ</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
-        </ion-card-header>
-      </ion-card>
-    </ion-slide>
-    <ion-slide>
-      <ion-card>
-        <img src="../assets/casa6.jpg"/>
-        <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UFF-Niterói</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
-          
-        </ion-card-header>
-      </ion-card>
-    </ion-slide>
-    <ion-slide>
-      <ion-card>
-        <img src="../assets/casa7.jpg"/>
-        <ion-card-header>
-          <ion-card-title><h5>República Estudantil, UFRJ-Fundão</h5></ion-card-title>
-          <ion-card-subtitle>Rio de Janeiro</ion-card-subtitle>
+          <ion-card-title><h5>{{republica2.titulo}}</h5></ion-card-title>
+          <ion-card-subtitle>{{republica2.subtitulo}}</ion-card-subtitle>
         </ion-card-header>
       </ion-card>
     </ion-slide>
   </ion-slides>
-  
-  
-  
-  
 </ion-content>
