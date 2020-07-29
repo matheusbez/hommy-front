@@ -7,6 +7,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button routerLink="/cadastro"><ion-icon name="person-circle-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button routerLink="/anunciar"><ion-icon name="create-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
   <ion-header collapse="condense"></ion-header>
   <ion-text>
     <h4 class="recommended">Recomendados</h4>

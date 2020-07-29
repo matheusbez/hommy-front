@@ -4,6 +4,14 @@ ion-title{
     text-align: center;
 }
 
+ion-fab-button {
+    --background: #DE5D5D;
+}
+
+ion-fab-button ion-icon {
+    color: white;
+}
+
 ion-text .recommended {
     color: #DE5D5D;
     font-weight: bold;
